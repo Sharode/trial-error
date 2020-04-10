@@ -6,10 +6,11 @@ import Image from '../components/image';
 import SEO from '../components/seo';
 
 import netlifyIdentity from 'netlify-identity-widget';
+import Form from '../components/form';
 
 const IndexPage = () => {
 	useEffect(() => {
-		netlifyIdentity.init();
+		// netlifyIdentity.init();
 	}, []);
 
 	const handleClick = () => {
@@ -24,6 +25,7 @@ const IndexPage = () => {
 			<p>Now go build something great.</p>
 
 			<button onClick={handleClick}>Login</button>
+			<Form />
 
 			<div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
 				<Image />
